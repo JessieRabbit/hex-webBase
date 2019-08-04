@@ -1,0 +1,258 @@
+body {
+    font-family: Microsoft JhengHei;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.concat {
+    background: #f6f6f6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.concat a {
+    text-decoration: none;
+}
+
+.concat ul {
+    float: right;
+}
+
+.concat ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.concat .fb {
+    border-right: 2px solid #cccccc;
+    padding-right: 10px;
+}
+
+.concat img {
+    float: left;
+    margin-right: 5px;
+}
+
+.concat .fb span {
+    color: #4460a0;
+}
+
+.concat .twitter span {
+    color: #00aaec;
+}
+
+.concat .fb a:hover {
+    border-bottom: 2px solid #4460a0;
+}
+
+.concat .twitter a:hover {
+    border-bottom: 2px solid #00aaec;
+}
+
+.logo {
+    float: left;
+    padding-left: 10px;
+}
+
+.logo a {
+    display: block;
+    background-image: url(../images/logo.png);
+    width: 173px;
+    height: 51px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #00cc99;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #00cc99;
+    padding-bottom: 10px;
+}
+
+.menu li {
+    float: left;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.banner {
+    background: url(../images/banner.jpg) no-repeat;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 60px;
+}
+
+.banner .title {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.content .productList {
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.content ul li {
+    float: left;
+    width: 300px;
+    box-shadow: 0px 5px 5px #dbdbdb;
+    margin-right: 20px;
+    padding-bottom: 20PX;
+    text-align: center;
+}
+
+.content h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content .productList p {
+    text-align: left;
+    font-size: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.tableStyle th,
+.tableStyle td {
+    border-top: 2px solid #d1d1d1;
+    border-bottom: 2px solid #d1d1d1;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-right: 80px;
+    font-size: 15px;
+}
+
+.tableStyle th {
+    text-align: left;
+    font-weight: bold;
+    background: #f7f7f7;
+}
+
+.tableStyle .pointColor {
+    color: #42b392;
+}
+
+.tableSection {
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-bottom: 60px;
+}
+
+.tableSection p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section {
+    background: -o-linear-gradient(#00644b, #009771);
+    background: -webkit-linear-gradient(#00644b, #009771);
+    background: -moz-linear-gradient(#00644b, #009771);
+    background: linear-gradient(#00644b, #009771);
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.section form textarea {
+    width: 460px;
+    height: 210px;
+    float: left;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding-left: 10px;
+}
+
+.section p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+form input[type="text"] {
+    display: block;
+    width: 440px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.section input[type="submit"] {
+    float: right;
+    display: block;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #00cc99;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+.section input[type="submit"]:active {
+    background: #007a5b;
+}
+
+.footer {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.footer .footer-logo {
+    float: left;
+    background-image: url(../images/footer-logo.png);
+    width: 173px;
+    height: 45px;
+}
+
+.footer p {
+    float: right;
+    padding-top: 5px;
+}
+
+.footer p span {
+    color: #e12d80;
+}
+
+.clearfix {
+    clear: both;
+}
