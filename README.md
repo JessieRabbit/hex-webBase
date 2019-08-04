@@ -1,2 +1,2 @@
 # hex-webBase
-六角學院HTML、CSS切版
+第一個最終HTML、CSS切版作業
