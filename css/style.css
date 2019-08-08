@@ -72,6 +72,8 @@ body {
 }
 
 .menu a {
+    /* 修改: 2.menu 裡面的 a 請加上 display: block 來增加區塊可點擊範圍 */
+    display: block;
     text-decoration: none;
     color: #00cc99;
 }
@@ -106,10 +108,11 @@ body {
 
 .content .productList {
     padding: 20px;
-    margin-bottom: 60px;
+    /* 修改5 */
+    /* margin-bottom: 60px; */
 }
 
-.content ul li {
+.content .productList .intro {
     float: left;
     width: 300px;
     box-shadow: 0px 5px 5px #dbdbdb;
@@ -123,12 +126,18 @@ body {
     margin-bottom: 10px;
 }
 
-.content .productList p {
+.content .productList p,
+.intro-jquery {
     text-align: left;
     font-size: 15px;
     padding-right: 20px;
     padding-left: 20px;
     line-height: 1.5;
+}
+
+/* 修改5 */
+.tableSection {
+    margin-top: 60px;
 }
 
 .tableStyle th,
@@ -138,7 +147,7 @@ body {
     padding-top: 15px;
     padding-left: 20px;
     padding-bottom: 15px;
-    padding-right: 80px;
+    padding-right: 90px;
     font-size: 15px;
 }
 
@@ -158,7 +167,7 @@ body {
     margin-bottom: 60px;
 }
 
-.tableSection p {
+.tableSection h3 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -184,7 +193,7 @@ body {
     padding-left: 10px;
 }
 
-.section p {
+.section h3 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -228,6 +237,11 @@ form input[type="text"] {
 
 .section input[type="submit"]:active {
     background: #007a5b;
+}
+
+/* 7..section input[type="submit"] 請設計 hover 樣式,提升使用者回饋 */
+.section input[type="submit"]:hover {
+    background: #009424;
 }
 
 .footer {

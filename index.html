@@ -46,49 +46,62 @@
                     <a href="https://www.hexschool.com/" target="_blank" title="連到hex school">hex-school</a>
                 </h1>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">首頁</a></li>
-                    <li><a href="#">產品介紹</a></li>
-                    <li><a href="#">聯絡我們</a></li>
-                </ul>
-            </div>
+            <!-- <div class="menu"> -->
+            <!-- 修改: 1.menu 可以寫到裡面的 ul 上,減少 div 的使用可以讓網頁更簡潔 -->
+            <ul class="menu">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">產品介紹</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+            <!-- </div> -->
             <div class="clearfix"></div>
         </div>
         <div class="banner">
             <div class="title">
-                <span>六角學院<br />讓你奠定良好的前端基礎</span>
+                <!-- 修改: 3..title 裡的文字請用標題標籤來呈現,以提升搜尋排行名次 -->
+                <h2>六角學院<br />讓你奠定良好的前端基礎</h2>
             </div>
         </div>
         <div class="content">
             <ul class="productList">
-                <li>
+                <li class="intro">
                     <img src="images/intro1.png" alt="Html 5 基礎教學" width="143px" height="143px">
                     <h3>Html 5 基礎教學</h3>
                     <p>
                         主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
                     </p>
                 </li>
-                <li>
+                <li class="intro">
                     <img src="images/intro2.png" alt="響應式網站設計" width="230px" height="143px">
                     <h3>響應式網站設計</h3>
                     <p>
                         響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
                     </p>
                 </li>
-                <li>
+                <li class="intro">
                     <img src="images/intro3.png" alt="jQuery實戰教學" width="114px" height="143px">
                     <h3>jQuery實戰教學</h3>
                     <!-- 3個文字高度一樣主要是段落一樣 -->
-                    <p>
+                    <!-- 修改: 4..productList 裡 "jQuery實戰教學" 中的列表請改用 ul li 來呈現 -->
+                    <ul class="intro-jquery">
+                        本課程有以下特色
+                        <li>．瞭解變數的使用方法</li>
+                        <li>．學習並操作DOM</li>
+                        <li>．學習基本數學運算方法</li>
+                        <li>．套件的操作及運用</li>
+                    </ul>
+                    <!-- <p>
                         本課程有以下特色<br />．瞭解變數的使用方法<br />．學習並操作DOM<br />．學習基本數學運算方法<br />．套件的操作及運用
-                    </p>
+                    </p> -->
                 </li>
-                <div class="clearfix"></div>
+                <!-- <div class="clearfix"></div> -->
             </ul>
+            <!--修改:5.ul 的第一層一定是 li,.productList 的 .clearfix 請改至 .productList ul 後方 -->
+            <div class="clearfix"></div>
 
             <div class="tableSection">
-                <p>線上及實體課程的差異</p>
+                <!-- 修改: 6..section p, .tableSection p 的文字請用標題標籤來呈現,以提升搜尋排行名次 -->
+                <h3>線上及實體課程的差異</h3>
                 <table class="tableStyle">
                     <tr>
                         <th>項目</th>
@@ -136,7 +149,8 @@
             </div>
         </div>
         <div class="section">
-            <p>對我們課程有興趣嗎？<br />歡迎留下您的資料</p>
+            <!-- 修改: 6..section p, .tableSection p 的文字請用標題標籤來呈現,以提升搜尋排行名次 -->
+            <h3>對我們課程有興趣嗎？<br />歡迎留下您的資料</h3>
             <form action="index.html">
                 <textarea name="content" placeholder="你的建議使我們成長"></textarea>
                 <label for="person">姓名</label>
@@ -146,8 +160,10 @@
                 <label for="mail">信箱</label>
                 <input type="text" name="mail" id="mail" placeholder="請輸入信箱">
                 <input type="submit" value="送出">
+                <!-- 8..section form 未正確清除浮動,應將 .clearfix 改至 input[type="submit"] 的後方 -->
+                <div class="clearfix"></div>
             </form>
-            <div class="clearfix"></div>
+            <!-- <div class="clearfix"></div> -->
         </div>
         <div class="footer">
             <div class="footer-logo"></div>
